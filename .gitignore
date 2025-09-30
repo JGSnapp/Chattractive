@@ -1,17 +1,20 @@
 .vscode
 
-# Pylance
 pyrightconfig.json
 
-# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
 
-# C extensions
 *.so
 
-# Distribution / packaging
+.env
+.env.local
+.env.production
+.env.staging
+.env.development
+
+*.so
 .Python
 build/
 develop-eggs/
@@ -30,13 +33,19 @@ wheels/
 *.egg
 MANIFEST
 
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+.virtualenvs/
+.env/
+.venv
+
 *.manifest
 *.spec
 
-# Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
 
@@ -44,5 +53,8 @@ syn_out/
 checkpoints/
 .gradio
 
-# Ignore generated sample .wav files
-**/*.wav
+chattractive.bd
+chattractive.db
+models/
+!chattractive/vendor/chatterbox/models/
+!chattractive/vendor/chatterbox/models/**
